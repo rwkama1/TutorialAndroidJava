@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context="uy.edu.bios.relativelayout.MainActivity">
+
+    <Button
+        android:id="@+id/btnBoton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botón 1" />
+
+    <Button
+        android:id="@+id/btnBoton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnBoton1"
+        android:text="Botón 2" />
+
+    <Button
+        android:id="@+id/btnBoton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBoton2"
+        android:layout_toRightOf="@+id/btnBoton2"
+        android:text="Botón 3" />
+
+    <Button
+        android:id="@+id/btnBoton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Botón Número Cuatro" />
+
+    <Button
+        android:id="@+id/btnBoton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnBoton4"
+        android:layout_alignParentBottom="true"
+        android:text="Botón 5" />
+
+</RelativeLayout>

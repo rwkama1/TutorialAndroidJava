@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Hola Mundo</string>
+    <string name="tvMensaje">¡Hola mundo!</string>
+    <string name="otroMensaje">¡Hola Android!</string>
+</resources>

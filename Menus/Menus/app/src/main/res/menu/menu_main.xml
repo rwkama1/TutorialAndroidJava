@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mniOpcionBuscar"
+        android:title="Buscar"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mniOpcionInfo"
+        android:title="Info"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/mniOpcionAgregar"
+        android:title="Agregar"
+        android:icon="@android:drawable/ic_menu_add"
+        app:showAsAction="never" />
+
+    <item android:title="Más opciones...">
+        <menu>
+
+            <item
+                android:id="@+id/mniOpcionModificar"
+                android:title="Modificar"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/mniOpcionEliminar"
+                android:title="Eliminar"
+                app:showAsAction="never" />
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uy.edu.bios.checkradiotoggle.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/llCasillas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CheckBox
+            android:id="@+id/cbMeInteresa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Este ejemplo me interesa"
+            android:checked="true"
+            android:onClick="casillasOnClick" />
+
+        <CheckBox
+            android:id="@+id/cbLoRecomendare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lo recomendaré"
+            android:onClick="casillasOnClick" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rgEjemploConocido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llCasillas">
+
+        <RadioButton
+            android:id="@+id/rbYaLoConocia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya lo conocía" />
+
+        <RadioButton
+            android:id="@+id/rbEsNuevoParaMi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Es nuevo para mí"
+            android:checked="true" />
+
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/tbEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textOn="Encendido"
+        android:textOff="Apagado"
+        android:checked="true"
+        android:onClick="tbEstadoOnClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgEjemploConocido" />
+
+</android.support.constraint.ConstraintLayout>
